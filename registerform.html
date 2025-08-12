@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>fruitables form</title>
+<link rel="stylesheet" href="./registrform.css">
+<link rel="stylesheet" href="./fruitablesheader.css">
+<link rel="stylesheet" href="./footerfordruitables.css">
+
+  
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/cae5a42bd1.js" crossorigin="anonymous"></script>
+    
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <i class="fas fa-map-marker-alt"></i> 123 Street, New York
+      <i class="fas fa-envelope"></i> Email@example.com
+    </div>
+    <div class="right">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Sales & Refunds</a>
+    </div>
+  </div>
+
+
+  <header class="navbar">
+    <div class="logo">ORGANIC</div>
+    <nav>
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./shopfruitable.html">Shop</a></li>
+        <li><a href="./fruitablesshopdetails.html">Shop Detail</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="./contactpagefruitables.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-shopping-bag"></i>
+      <a href="./frutableslogin.html"> <i class="fas fa-user"></i></a>
+    </div>
+  </header>
+   
+  <main class="card" role="main">
+    <h1>Create an account</h1>
+    
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required placeholder="NITHISH REDDY">
+        <div class="error" id="nameError" aria-live="polite" hidden></div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="mail@.com">
+        <div class="error" id="emailError" aria-live="polite" hidden></div>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 9381710173" pattern="^\+?[0-9\s-]{7,20}$">
+       
+        <div class="error" id="phoneError" aria-live="polite" hidden></div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required autocomplete="new-password" minlength="8" placeholder="Choose a strong password">
+       
+        <div class="hint">Minimum 8 characters. Use letters, numbers and special characters.</div>
+        <div class="error" id="pwError" aria-live="polite" hidden></div>
+      </div>
+
+      <div class="field">
+        <label for="password2">Re-enter password</label>
+        <input id="password2" name="password2" type="password" required autocomplete="new-password" placeholder="Re-enter password">
+        <div class="error" id="pw2Error" aria-live="polite" hidden></div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="submitBtn">Create account</button>
+      </div>
+
+      <div id="formMsg" role="status" aria-live="polite" style="margin-top:12px"></div>
+    </form>
+  </main>
+  
+  <footer>
+    <div class="footer-top">
+      <input type="email" placeholder="Your Email" />
+      <button>Subscribe Now</button>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h3>Fruitables</h3>
+        <p>Fresh products</p>
+      </div>
+      <div>
+        <h4>Shop Info</h4>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <p>My Account</p>
+        <p>Wishlist</p>
+        <p>Shopping Cart</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: example@gmail.com</p>
+        <p>Phone: +0123 4567 8910</p>
+      </div>
+    </div>
+    <p class="copyright">
+      &copy; 2025 PurePluck Fruitables. All rights reserved.
+    </p>
+  </footer>
+  <script src="./registrationform.js"></script>
+</body>
+</html>
